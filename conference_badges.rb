@@ -9,8 +9,8 @@ def batch_badge_creator(array)
 end
 
 def assign_rooms(array)
-  array.collect.with_index {|a,b| "Hello, #{a}! You'll be assigned to room #{b+1}!"}
-end
+#   array.collect.with_index {|a,b| "Hello, #{a}! You'll be assigned to room #{b+1}!"}
+# end
 
 def printer(array)
   batch_badge_creator(array).each do |x|
