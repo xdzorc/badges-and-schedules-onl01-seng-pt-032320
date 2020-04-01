@@ -9,14 +9,14 @@ def batch_badge_creator(array)
 end
 
 def assign_rooms(array)
-  array.each_with_index {|a,b| puts"Hello,#{a}! You'll be assigned to room #{b+1}!"}
+  array.map.with_index {|a,b| puts"Hello,#{a}! You'll be assigned to room #{b+1}!"}
 end
 
-# def printer(array)
-#   batch_badge_creator(array).each do |x|
-#     puts"#{x}"
-#   end
-#   assign_rooms(array).each do |y|
-#     puts"#{y}"
-#   end
-# end
+def printer(array)
+  batch_badge_creator(array).each do |x|
+    puts"#{x}"
+  end
+  assign_rooms(array).each do |y|
+    puts"#{y}"
+  end
+end
